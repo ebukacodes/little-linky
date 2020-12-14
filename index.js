@@ -72,7 +72,7 @@ app.use((err, req, res, next) => {
 
 mongoose
   .connect(
-    'mongodb+srv://ebuka:akara@cluster0.vmw9w.mongodb.net/shortener?retryWrites=true&w=majority',
+    'db',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
