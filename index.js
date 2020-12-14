@@ -79,6 +79,6 @@ mongoose
       useCreateIndex: true,
     }
   )
-  .then((result) => app.listen(5000))
+  .then((result) => app.listen(process.env.PORT || 5000))
   .then(console.log('Database connected'))
   .catch((err) => console.log(err));
